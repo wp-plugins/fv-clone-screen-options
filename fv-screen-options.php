@@ -133,7 +133,7 @@ function fv_screen_options_manage()
 			continue;
 	?>
 		<option value="<?php echo $user_object->ID; ?>"><?php echo $user_object->display_name; ?></option>
-	<? } ?>
+	<?php } ?>
 	</select>
 
     <?php wp_nonce_field( 'screen-options-nonce', 'screenoptionnonce', false ); ?><input type="submit" value="Clone" name="save_post_screen_options" />
