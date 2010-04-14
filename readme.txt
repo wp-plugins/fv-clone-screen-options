@@ -18,6 +18,17 @@ A huge time saver. Enjoy!
 [Support](http://foliovision.com/seo-tools/wordpress/plugins/fv-clone-screen-options) |
 [Change Log](http://foliovision.com/seo-tools/wordpress/plugins/fv-clone-screen-options/changelog/) |
 
+== Changelog ==
+
+= Version 0.2 =
+* Custom Screen Options configuration interface was removed.
+* All the standard Wordpress Screen Options configuration panels are used, so plugin is easier to use.
+* Works with post, page and dashboard screens.
+
+= Version 0.1 =
+* Plugin has its own interface for configuring Screen Options.
+* Support only for post screen.
+
 == Installation ==
 
 You can use the built in installer and upgrader, or you can install the plugin
