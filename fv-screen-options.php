@@ -114,7 +114,7 @@ function fv_screen_options_manage()
 ?>
   <div class="wrap">
     <div id="icon-tools" class="icon32"><br /></div>
-      <h2>Screen Opinion</h2>
+      <h2>FV Clone Screen Options</h2>
 
   	<form id="adv-settings" action="" method="post">
   	<?php _e('Clone settings for every user from') ?>
