@@ -19,6 +19,9 @@ A huge time saver. Enjoy!
 
 == Changelog ==
 
+= Version 0.2.1 =
+* Added support for list of posts and pages (Post -> Edit and Pages -> Edit)
+
 = Version 0.2 =
 * Custom Screen Options configuration interface was removed.
 * All the standard Wordpress Screen Options configuration panels are used, so plugin is easier to use.
