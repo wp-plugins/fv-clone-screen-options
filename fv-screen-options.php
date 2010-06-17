@@ -3,12 +3,13 @@
 Plugin Name: FV Clone Screen Options 
 Plugin URI: http://foliovision.com/seo-tools/wordpress/plugins/fv-clone-screen-options
 Description: Simple plugin which lets you manage Screen Options of all the users on your blog.
-Version: 0.2
+Version: 0.2.1
 Author URI: http://foliovision.com
 
 Copyright (c) 2009 Foliovision (http://foliovision.com)
 
 Changelog:
+0.2.1 - added support for list of posts and pages (Post -> Edit and Pages -> Edit)
 0.2 - cloning - select a user and his settings will be cloned to everybody else
 0.1 - Save button sets the settings to all the users, works only for posts
 
@@ -17,7 +18,7 @@ Changelog:
 //	what will be actually cloned? It's meta keys from usermeta
 $fv_screen_options_array = array( 'metaboxhidden_post', 'closedpostboxes_post', 'screen_layout_post', 'wp_metaboxorder_post', 								'metaboxhidden_dashboard', 'closedpostboxes_dashboard', 'screen_layout_dashboard', 'wp_metaboxorder_dashboard',
 								'metaboxhidden_page', 'closedpostboxes_page', 'screen_layout_page', 'wp_metaboxorder_page',
-								'wp_usersettings'
+								'wp_usersettings', 'edit_per_page', 'manageeditcolumnshidden', 'edit_pages_per_page', 'manageeditpagescolumnshidden'
 );
 
 function fv_screen_options() {
