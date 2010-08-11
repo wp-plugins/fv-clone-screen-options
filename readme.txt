@@ -41,6 +41,47 @@ A huge time saver. Enjoy!
 = 0.2.2 =
 Added support for Wordpress 3.0 post types.
 
+== Frequently Asked Questions ==
+
+= What screens are being cloned? =
+
+For all the post types (including 'link', 'dashboard' and custom post types):
+
+* Metabox visibility, position and open/closed state.
+* Number of columns on editing screen.
+* Number of items per page.
+* Columns in the list of the items.
+
+Also:
+
+* WP admin panel menu open/closed state.
+* Dashboard items.
+
+= What user meta values are being cloned? =
+
+Here's a list of the basic and legacy items:
+
+* wp_user-settings
+* managelink-managercolumnshidden
+* manageuploadcolumnshidden
+* edit_per_page
+* manageeditcolumnshidden
+* wp_usersettings
+* edit_pages_per_page
+* manageeditpagescolumnshidden
+* wp_metaboxorder_post
+* wp_metaboxorder_page
+* wp_metaboxorder_dashboard
+
+Also all of this for all the posts types (post, page, attachment, revision) plus 'link', 'dashboard' and all the custom post types:
+
+* metaboxhidden_TYPE
+* closedpostboxes_TYPE
+* screen_layout_TYPE
+* meta-box-order_TYPE
+* edit_TYPE_per_page
+* manageedit-TYPEcolumnshidden
+
 == Installation ==
 
 You can use the built in installer and upgrader, or you can install the plugin
