@@ -25,24 +25,26 @@ Changelog:
 function fv_screen_options_get_metanames() {
   global $wp_post_types;
   $types = array();
-  foreach( $wp_post_types AS $key=>$value ) {
-    $types[] = $key;
+  if( $wp_post_types ) {
+    foreach( $wp_post_types AS $key=>$value ) {
+      $types[] = $key;
+    }
+    $types[] = 'link';
+    $types[] = 'dashboard';
+    
+    //  some of the items in this array are for compatibily with older WP
+    $metafields = array( 'wp_user-settings', 'managelink-managercolumnshidden', 'manageuploadcolumnshidden' , 'edit_per_page', 'manageeditcolumnshidden', 'wp_usersettings', 'edit_pages_per_page', 'manageeditpagescolumnshidden', 'wp_metaboxorder_post', 'wp_metaboxorder_page', 'wp_metaboxorder_dashboard');
+    foreach( $types AS $type ) {
+      $metafields[] = 'metaboxhidden_'.$type;
+      $metafields[] = 'closedpostboxes_'.$type;
+      $metafields[] = 'screen_layout_'.$type;
+      $metafields[] = 'meta-box-order_'.$type;
+      $metafields[] = 'edit_'.$type.'_per_page';
+      $metafields[] = 'manageedit-'.$type.'columnshidden';
+    }
+    
+    return $metafields;
   }
-  $types[] = 'link';
-  $types[] = 'dashboard';
-  
-  //  some of the items in this array are for compatibily with older WP
-  $metafields = array( 'wp_user-settings', 'managelink-managercolumnshidden', 'manageuploadcolumnshidden' , 'edit_per_page', 'manageeditcolumnshidden', 'wp_usersettings', 'edit_pages_per_page', 'manageeditpagescolumnshidden', 'wp_metaboxorder_post', 'wp_metaboxorder_page', 'wp_metaboxorder_dashboard');
-  foreach( $types AS $type ) {
-    $metafields[] = 'metaboxhidden_'.$type;
-    $metafields[] = 'closedpostboxes_'.$type;
-    $metafields[] = 'screen_layout_'.$type;
-    $metafields[] = 'meta-box-order_'.$type;
-    $metafields[] = 'edit_'.$type.'_per_page';
-    $metafields[] = 'manageedit-'.$type.'columnshidden';
-  }
-  
-  return $metafields;
 }
 
 
