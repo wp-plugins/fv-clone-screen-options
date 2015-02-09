@@ -211,4 +211,15 @@ function fv_screen_options_user_register($user_ID) {
 
 add_action('user_register', 'fv_screen_options_user_register');
 
+add_filter('plugin_action_links', 'fv_screen_options_plugin_action_links', 10, 2);
+
+function fv_screen_options_plugin_action_links($links, $file) {
+  	$plugin_file = basename(__FILE__);
+  	if (basename($file) == $plugin_file) {
+      $settings_link =  '<a href="'.site_url('wp-admin/tools.php?page=fv_screen_options_manage').'">Tools</a>';
+  		array_unshift($links, $settings_link);
+  	}
+  	return $links;
+}
+
 ?>
