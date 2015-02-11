@@ -15,7 +15,7 @@ First set your own Screen Options and then **clone them across all users** with 
 
 A huge time saver. Enjoy!
 
-[Support](http://foliovision.com/seo-tools/wordpress/plugins/fv-clone-screen-options)
+[Free support available on our forums](https://foliovision.com/support/fv-clone-screen-options/)
 
 == Changelog ==
 
